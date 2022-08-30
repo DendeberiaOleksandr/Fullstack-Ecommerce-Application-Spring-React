@@ -2,7 +2,7 @@
 
 ## Frontend
 
-[![Open on](https://img.youtube.com/vi/C3HLYk1vWIE&t/0.jpg)](https://www.youtube.com/watch?v=C3HLYk1vWIE&t)
+[![Open on](https://img.youtube.com/vi/C3HLYk1vWIE/0.jpg)](https://www.youtube.com/watch?v=C3HLYk1vWIE)
 
 ## Available Scripts
 
