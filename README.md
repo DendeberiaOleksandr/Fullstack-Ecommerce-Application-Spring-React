@@ -26,5 +26,5 @@ To compile use `mvn clean package`
 
 | Name  | Method | Arguments |
 | ------------- | ------------- | ------------- |
-| /api/products  | GET  |  |
+| /api/products  | GET  | int size, default = 2 \n sasa |
 | Content Cell  | Content Cell  |  |
