@@ -2,6 +2,8 @@
 
 ## Frontend
 
+[Open on YouTube](https://youtu.be/C3HLYk1vWIE)
+
 [![Open on](https://img.youtube.com/vi/C3HLYk1vWIE/0.jpg)](https://www.youtube.com/watch?v=C3HLYk1vWIE)
 
 ## Available Scripts
