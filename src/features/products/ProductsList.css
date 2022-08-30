@@ -1,0 +1,15 @@
+ul li a {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    transition: 0.5s;
+}
+
+ul li a:hover {
+    background-color: rgb(147 197 253);
+}
+
+ul .selected a {
+    color: rgb(96 165 250 / var(--tw-bg-opacity));
+    background-color: white;
+}
