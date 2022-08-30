@@ -28,3 +28,6 @@ To compile use `mvn clean package`
 | ------------- | ------------- | ------------- |
 | /api/products  | GET  | int size, default = 2 <br /> int page, default = 0 <br /> String sort, default = "createdAt, desc" <br /> String filter, required = false|
 | Content Cell  | Content Cell  |  |
+
+### Filter And Sorting
+Filter and sorting are provided using RSQL syntax. https://github.com/perplexhub/rsql-jpa-specification
