@@ -26,7 +26,7 @@ public class Product {
     @ManyToOne(fetch = FetchType.EAGER)
     private Category category;
 
-    @OneToOne(fetch = FetchType.EAGER)
+    @OneToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     private Image image;
 
     @Column(nullable = false)

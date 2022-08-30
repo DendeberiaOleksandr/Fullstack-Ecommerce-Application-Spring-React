@@ -3,13 +3,12 @@ package com.ecommerce.ecommerceapi.endpoints.products;
 import com.ecommerce.ecommerceapi.service.ProductService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.data.domain.Page;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import javax.persistence.EntityNotFoundException;
 import javax.validation.Valid;
-import java.util.List;
-import java.util.stream.Collectors;
 
 import static com.ecommerce.ecommerceapi.constants.Api.PREFIX;
 
@@ -23,11 +22,15 @@ public class ProductController {
     private final ProductService productService;
 
     @GetMapping
-    public List<ProductGetDto> getAll(){
-        log.info("GET: /products");
-        return productService.findAll().stream()
-                .map(productService::convertToDto)
-                .collect(Collectors.toList());
+    public Page<ProductGetDto> getAll(
+            @RequestParam(defaultValue = "2") int size,
+            @RequestParam(defaultValue = "0") int page,
+            @RequestParam(defaultValue = "createdAt,desc") String sort,
+            @RequestParam(required = false) String filter
+    ){
+        log.info("GET: /products size:{}, page:{}, sort:{}, filter:{}", size, page, sort, filter);
+        return productService.findAll(size, page, sort, filter)
+                .map(productService::convertToDto);
     }
 
     @GetMapping("/{id}")
