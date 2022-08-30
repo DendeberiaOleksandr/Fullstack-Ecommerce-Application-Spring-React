@@ -29,6 +29,9 @@ To compile use `mvn clean package`
 | /api/products  | GET  | int size, default = 2 <br /> int page, default = 0 <br /> String sort, default = "createdAt, desc" <br /> String filter, required = false|
 | /api/products/{id}  | GET  | Integer id  |
 | /api/products  | POST  | ``` body: { String name, Integer price, Integer categoryId, byte[] image } ```  |
+| /api/products/{id}  | PATCH  | ``` Integer id, body: { String name, Integer price, Integer categoryId, byte[] image } ```  |
+| /api/products  | DELETE  |  |
+| /api/products/{id}  | DELETE  | Integer id |
 
 ### Filter And Sorting
 Filter and sorting are provided using RSQL syntax. https://github.com/perplexhub/rsql-jpa-specification
