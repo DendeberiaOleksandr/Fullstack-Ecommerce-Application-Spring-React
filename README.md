@@ -33,5 +33,7 @@ To compile use `mvn clean package`
 | /api/products  | DELETE  |  |
 | /api/products/{id}  | DELETE  | Integer id |
 
+| /api/products/{id}  | DELETE  | Integer id |
+
 ### Filter And Sorting
 Filter and sorting are provided using RSQL syntax. https://github.com/perplexhub/rsql-jpa-specification
