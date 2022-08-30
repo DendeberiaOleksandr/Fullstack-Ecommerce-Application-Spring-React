@@ -7,17 +7,17 @@ To compile use `mvn clean package`
 ### Domain
 
 1. Category
-   - id INT PRIMARY KEY
-   - name VARCHAR(50) NOT NULL
-   - createdAt DATETIME NOT NULL
+   - __id__ Integer PRIMARY KEY
+   - __name__ String(50) NOT NULL
+   - __createdAt__ Date NOT NULL
 
 2. Product
-   - id INT PRIMARY KEY
-   - name VARCHAR(100) NOT NULL
-   - price BIGINT NOT NULL
-   - category Category
-   - image Image
+   - __id__ Integer PRIMARY KEY
+   - __name__ String(100) NOT NULL
+   - __price__ Long NOT NULL
+   - __category__ Category
+   - __image__ Image
    
 3. Image
-   - id BIGINT PRIMARY KEY
-   - content LONGBLOB
+   - __id__ Long PK
+   - __content__ byte[]
