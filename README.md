@@ -21,3 +21,10 @@ To compile use `mvn clean package`
 3. Image
    - __id__ Long PK
    - __content__ byte[]
+
+### Endpoints
+
+| Name  | Method | Arguments |
+| ------------- | ------------- | ------------- |
+| /api/products  | GET  |  |
+| Content Cell  | Content Cell  |  |
