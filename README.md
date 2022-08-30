@@ -33,7 +33,18 @@ To compile use `mvn clean package`
 | /api/products  | DELETE  |  |
 | /api/products/{id}  | DELETE  | Integer id |
 
-| /api/products/{id}  | DELETE  | Integer id |
+| Name  | Method | Arguments |
+| ------------- | ------------- | ------------- |
+| /api/categories  | GET  |  |
+| /api/categories/{id}  | GET  | Integer id  |
+| /api/categories  | POST  | ``` body: { String name } ```  |
+| /api/categories/{id}  | PATCH  | ``` Integer id, body: { String name } ```  |
+| /api/categories  | DELETE  |  |
+| /api/categories/{id}  | DELETE  | Integer id |
+
+| Name  | Method | Arguments |
+| ------------- | ------------- | ------------- |
+| /api/images/{id}  | GET  | Integer id |
 
 ### Filter And Sorting
 Filter and sorting are provided using RSQL syntax. https://github.com/perplexhub/rsql-jpa-specification
